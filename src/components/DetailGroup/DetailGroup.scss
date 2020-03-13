@@ -1,0 +1,28 @@
+.detail-group{
+  width: 57%;
+  .detail-group__item{
+    border-radius: 0 0 5px 5px;
+    box-shadow: 2px 2px 4px hsla(0,0%,40.8%,.3);
+    border: 1px solid #e1e7ec;
+    margin-bottom: 20px;
+    h4{
+      background: #e1e7ec;
+      margin: 0 0 15px;
+      padding: 10px 20px 9px;
+    }
+    .detail-group__info{
+      padding: 20px;
+      .detail-group__wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .info{
+          margin-left: 40px;
+          margin-top: 0;
+          flex: 1;
+        }
+      }
+    }
+  }
+}

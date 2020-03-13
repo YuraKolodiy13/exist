@@ -1,0 +1,45 @@
+.car-search-groups{
+  width: 37%;
+  h2{
+    margin-top: 0;
+    color: #374250;
+    font-size: 28px;
+    font-weight: 400;
+  }
+  ul{
+    padding-left: 20px;
+    margin: 0;
+    li{
+      display: flex;
+      flex-direction: column-reverse;
+      span{
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+      ul{
+        & + span{
+          padding-left: 15px;
+          position: relative;
+          &::before,
+          &::after{
+            content: '';
+            position: absolute;
+            width: 7px;
+            height: 1px;
+            background: #606975;
+            left: 0;
+            top: 9px;
+            transition: .3s;
+          }
+        }
+        &[hidden]{
+          & + span{
+            &::before{
+              transform: rotate(-90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
